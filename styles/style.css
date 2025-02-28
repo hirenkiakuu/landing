@@ -144,6 +144,10 @@ body {
   /* flex-wrap: wrap; */
 }
 
+.about__list--mobile-only {
+  display: none;
+}
+
 .about__container h2 {
   margin-bottom: 24px;
 }
@@ -557,9 +561,9 @@ input[type='checkbox']:checked::before {
   }
 
   .about__item b {
-    color: #B3261E;
+    color: #b3261e;
   }
-  
+
   .features__intro {
     display: flex;
     flex-direction: column;
