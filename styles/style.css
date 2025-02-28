@@ -1,0 +1,587 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section__container {
+  padding: 0 64px;
+}
+
+.header {
+  padding-top: 31px;
+  margin-bottom: 24px;
+}
+
+.header__container-inner {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header__nav {
+  /* flex: 1; */
+  /* flex-grow:1; */
+  /* Центрируем навигацию */
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+}
+
+.header__register-btn {
+  /* display: flex;
+  justify-content: center; */
+  border: 1px solid #000;
+  padding: 10px 20px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+
+/* hero section  */
+.hero {
+  background: url(../img/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 112px;
+
+  /* height: 100vh; */
+}
+
+.hero h1 {
+  color: #c5524c;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: #b12747;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.hero__about-btn {
+  border: 1px solid #fff;
+  padding: 34px 70px;
+  width: 286px;
+  height: 100px;
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp {
+  padding: 280px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  padding-bottom: 112px;
+  margin-bottom: 112px;
+}
+
+.about__container {
+  display: flex;
+  gap: 80px;
+  /* flex-wrap: wrap; */
+}
+
+.about__container h2 {
+  margin-bottom: 24px;
+}
+
+.about__container p {
+  margin-bottom: 32px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 64px;
+  column-gap: 48px;
+}
+
+.about__item p:first-of-type {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.about__item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.features {
+  padding-bottom: 112px;
+  margin-bottom: 112px;
+}
+
+.features__container {
+  display: flex;
+  gap: 80px;
+}
+
+.features__intro {
+  max-width: 624px;
+}
+
+.features__intro h2 {
+  margin-bottom: 32px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.features__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.features__content p:first-child {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.features__content p:last-child {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.geography {
+  padding-bottom: 112px;
+  margin-bottom: 112px;
+}
+
+.geography h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.geography__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 410px;
+}
+
+.geography__img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50%;
+  z-index: -10000;
+  opacity: 0.3;
+}
+
+.geography__list {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+}
+
+.benefits {
+  padding-bottom: 112px;
+  margin-bottom: 112px;
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.contact {
+  padding-bottom: 112px;
+  margin-bottom: 112px;
+}
+
+.contact__container {
+  display: flex;
+  gap: 80px;
+}
+
+.contact__form-container {
+  flex: 1;
+}
+
+.contact__form-container h2 {
+  margin-bottom: 32px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input-row input,
+textarea {
+  border: 1px solid #000;
+}
+
+.input-row input {
+  min-height: 48px;
+}
+
+.input-row textarea {
+  min-height: 180px;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  border: 1px solid #000;
+  width: 18px;
+  height: 18px;
+
+  /* display: grid;
+  place-content: center; */
+  /* position: relative;
+   */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='checkbox']::before {
+  /* position: absolute; */
+  content: '';
+  /* left: 50%;
+  transform: translateX(-50%); */
+  /* top: 0; */
+  width: 14px;
+  height: 14px;
+  transform: scale(0);
+  /* transition: 120ms transform ease-in-out; */
+  background-color: #000;
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}
+
+.checkbox-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.faqs {
+  margin-bottom: 112px;
+}
+
+.faqs h2 {
+  margin-bottom: 80px;
+}
+
+.faqs__item details p {
+  margin-bottom: 40px;
+}
+
+.faqs__item:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.faqs__item details summary {
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 22px;
+  padding-top: 22px;
+  border-top: 1px solid #000;
+}
+
+.faqs details[open] summary::after {
+  transform: rotate(0deg);
+}
+
+.faqs details summary::after {
+  content: url(../img/arrow.svg);
+  transform: rotate(180deg);
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer__content {
+  padding-top: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  padding-bottom: 190px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__links a {
+  text-decoration: underline;
+}
+
+.footer__divider {
+  border-top: 1px solid #000;
+  width: 100%;
+}
+
+.divider {
+  border-left: 2px solid #000;
+  height: 100px;
+  width: 50%;
+  position: relative;
+  left: 30px;
+}
+
+.contact-btn {
+  font-size: 16px;
+  display: inline-block;
+  /* justify-content: center;
+  align-items: center; */
+  border: 1px solid #000;
+  padding: 15px 24px;
+}
+
+.form-btn {
+  border: 1px solid #000;
+  padding: 12px 24px;
+  width: 229px;
+  height: 48px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 1030px) {
+  .contact__img {
+    display: none;
+  }
+
+  .partners__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 820px) {
+  .header__container-inner {
+    /* flex-wrap: wrap;
+    gap: 20px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header__register-btn {
+    position: static;
+  }
+
+  .nav__item {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .nav__list {
+    align-items: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .geography__container {
+    gap: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .geography__container {
+    gap: 126px;
+  }
+
+  .geography__img {
+    display: none;
+  }
+
+  .benefits__list p {
+    font-size: 32px;
+  }
+
+  .features__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feautures__list {
+    flex: 1;
+  }
+
+  .about__container h2 {
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  .about__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__intro p {
+    display: none;
+  }
+
+  /* .about__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    align-items: center;
+  } */
+
+  .about__list {
+    display: none;
+  }
+
+  .about__list--mobile-only {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    align-items: center;
+  }
+
+  .about__item b {
+    color: #B3261E;
+  }
+  
+  .features__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .geography__container {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+
+  .temp h1 {
+    text-align: center;
+  }
+
+  /* h1 {
+    font-size: 38px;
+  } */
+
+  h2 {
+    font-size: 30px;
+  }
+}
